@@ -24,7 +24,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy target\\Python_Project.jar \"${tomcatWeb}\\Python_Project.jar\""
+     bat "copy target\\project-1.jar \"${tomcatWeb}\\project-1.jar\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
